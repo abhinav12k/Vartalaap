@@ -64,7 +64,7 @@ test_set = test_datagen.flow_from_directory(
 model = classifier.fit_generator(
         training_set,
         steps_per_epoch=800,
-        epochs=25,
+        epochs=7,
         validation_data = test_set,
         validation_steps = 6500
       )
