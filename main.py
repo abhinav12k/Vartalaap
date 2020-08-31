@@ -113,8 +113,8 @@ def func():
                             ImageNumpyFormat = np.asarray(ImageItself)
                             plt.imshow(ImageNumpyFormat)
                             plt.draw()
-                            plt.pause(0.5)  # pause how many seconds
-                            # plt.close()
+                            plt.pause(0.8)  # pause how many seconds
+                            #plt.close()
                         else:
                             continue
 
