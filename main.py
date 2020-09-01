@@ -118,7 +118,7 @@ def func():
                             continue
 
             except:
-                print("Could not listen")
+                pass
             plt.close()
 
 
