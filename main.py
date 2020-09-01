@@ -59,7 +59,6 @@ def func():
                 elif(a.lower() in isl_gif):
 
                     class ImageLabel(tk.Label):
-                        """a label that displays images, and plays them if they are gifs"""
 
                         def load(self, im):
                             if isinstance(im, str):
@@ -100,7 +99,7 @@ def func():
                     lbl = ImageLabel(root)
                     lbl.pack()
                     lbl.load(
-                        r'/home/shubh/Videos/ISL_CODE/ISL/ISL_Gifs/{0}.gif'.format(a.lower()))
+                        r'/home/abhinav/Desktop/Hackathon/Vartalaap/ISL_Gifs/{0}.gif'.format(a.lower()))
                     root.mainloop()
                 else:
 
@@ -114,12 +113,12 @@ def func():
                             plt.imshow(ImageNumpyFormat)
                             plt.draw()
                             plt.pause(0.8)  # pause how many seconds
-                            #plt.close()
+                            # plt.close()
                         else:
                             continue
 
             except:
-                print("Could not listen")
+                pass
             plt.close()
 
 
