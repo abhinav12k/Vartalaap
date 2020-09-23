@@ -99,7 +99,7 @@ def func():
                     lbl = ImageLabel(root)
                     lbl.pack()
                     lbl.load(
-                        r'/home/abhinav/Desktop/Hackathon/Vartalaap/ISL_Gifs/{0}.gif'.format(a.lower()))
+                        r'C:/Users/Dhruv/Desktop/fhgb/Vartalaap/ISL_Gifs/{0}.gif'.format(a.lower()))
                     root.mainloop()
                 else:
 
@@ -112,7 +112,7 @@ def func():
                             ImageNumpyFormat = np.asarray(ImageItself)
                             plt.imshow(ImageNumpyFormat)
                             plt.draw()
-                            plt.pause(0.8)  # pause how many seconds
+                            plt.pause(0.1)  # pause how many seconds
                             # plt.close()
                         else:
                             continue
