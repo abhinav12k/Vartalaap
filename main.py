@@ -111,6 +111,7 @@ def func():
                             ImageItself = Image.open(ImageAddress)
                             ImageNumpyFormat = np.asarray(ImageItself)
                             plt.imshow(ImageNumpyFormat)
+                            plt.axis('off')
                             plt.draw()
                             plt.pause(0.1)  # pause how many seconds
                             # plt.close()
@@ -127,11 +128,11 @@ while 1:
     from recognise import start
     image = "signlang.png"
     msg = "HEARING IMPAIRMENT ASSISTANT"
-    choices = ["Live Voice", "All Done!", "Recorded Audio"]
+    choices = ["Live Voice","Live Video","Quit"]
     reply = buttonbox(msg, image=image, choices=choices)
     if reply == choices[0]:
         func()
     if reply == choices[1]:
-        quit()
-    if reply == choices[2]:
         start()
+    if reply == choices[2]:
+        quit()
